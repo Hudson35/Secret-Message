@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+
+    <meta charset='UTF-8'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secret Message</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+    <style>
+        /*Start global*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .row {
+            margin-top: 25vh;
+        }
+
+        .app-overview {
+            margin-top: 10vh;
+            border: solid 2px red;
+        }
+
+        h1 {
+            margin-top: 0;
+
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+          }
+
+        main {
+            flex: 1 0 auto;
+        }
+
+        #page-footer {
+            padding: 2rem;
+            margin-top: 10rem;
+        }
+
+    </style>
+</head>
+
+<div>
+
+      <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Secret Message</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="https://materializecss.com/">Materialize</a></li>
+        <li><a href="https://www.javascript.com/">JavaScript</a></li>
+        <li><a href="#">DevHudson</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+    <div class="row">
+        <div class="col s8 offset-s2">
+            <div id="message-show" class="card-panel hide">
+                <h1></h1>
+                <div>
+                    <a href="./index.html">Create your own secret message</a>
+                </div>
+            </div>
+            <div id="message-form" class="card-panel">
+                <form>
+                    <label>Enter a Secret Message</label>
+                    <input placeholder="Write something here..." id="message-input" />
+                    <button class="btn">Create</button>
+                </form>
+            </div>
+
+            <div id="link-form" class="card-panel hide">
+                <div>Share this link with a friend
+                    <input id="link-input" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="page-footer" id="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Messaging using Base64 Encoding</h5>
+                <p class="grey-text text-lighten-4">Using the btoa() and atob() JS functions.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://developer.mozilla.org/en-US/docs/Glossary/Base64">Read about Base64</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/btoa">Read about btoa()</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/atob">Read about atob()</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://developer.mozilla.org/en-US/docs/Glossary/ASCII">Read about ASCII</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2020 Copyright Hudson Birdsong
+            <a class="grey-text text-lighten-4 right" href="https://developer.mozilla.org/en-US/">MDN web docs</a>
+            </div>
+          </div>
+        </footer>
+
+
+
+
+    <script src="index.js"></script>
+</div>
+
+</html>
