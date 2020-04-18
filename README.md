@@ -1,4 +1,7 @@
-# Secret-Message
+# Secret-Message App
+
+## Live App Demo: https://secret-message.hudsonbirdsong.now.sh/
+
 ## Base64 Encoding. How it works.
 - First start out with a regular ASCII Character string, say: "sec"
 - The string "sec" is then taken and converted into it's ASCII Character Code values which are the following:
@@ -25,3 +28,5 @@ and sent through the url, then the user shares the link, when someone opens the 
 - Example: 
 		- const encodedData = window.btoa('Hello, world'); // encode a string, output: "SGVsbG8sIHdvcmxk"
 		- const decodedData = window.atob(encodedData); // decode the string, output: "Hello, world"
+		
+# 
